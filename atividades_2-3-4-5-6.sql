@@ -70,5 +70,5 @@ SELECT vl_mens, curso, no_ies, est, mun FROM fies_csv WHERE (est='AL' OR est='BA
 SELECT DISTINCT no_ies, p_solicit, est, mun_ies FROM fies_csv WHERE (est='AL' OR est='BA' OR est='PB' OR est='PE' OR est='RN' OR est='CE' OR est='SE' OR est='MA' OR est='PI') AND nu_mes=09 AND nu_ano=2019 ORDER BY p_solicit DESC LIMIT 10
 
 /********** ATIVIDADE 6 **********/
-SELECT curso, p_solicit, est, mun_ies FROM fies_csv WHERE (est='AL' OR est='BA' OR est='PB' OR est='PE' OR est='RN' OR est='CE' OR est='SE' OR est='MA' OR est='PI') AND nu_mes=09 AND nu_ano=2019 ORDER BY p_solicit DESC LIMIT 10
+SELECT DISTINCT cod_curso, curso, p_solicit, est, mun_ies FROM fies_csv WHERE (est='AL' OR est='BA' OR est='PB' OR est='PE' OR est='RN' OR est='CE' OR est='SE' OR est='MA' OR est='PI') AND nu_mes=09 AND nu_ano=2019 ORDER BY p_solicit DESC LIMIT 10
 
